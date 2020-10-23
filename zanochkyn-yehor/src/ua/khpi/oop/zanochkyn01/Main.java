@@ -28,25 +28,28 @@ public class Main
 		int b = 011101;
 		int c = ((7-1)%26)+1;
 		char d = (char)(c+65);
+		System.out.format("%12s%10s%10s%10s\n", "Number","Paired","Unpaired","BinOnes");
 		int paired = getEven(num);
 		int unpaired = getOdd(num);
-		paired += getEven(phone);
-		unpaired += getOdd(phone);
-		paired += getEven(a);
-		unpaired += getOdd(a);
-		paired += getEven(b);
-		unpaired += getOdd(b);
-		paired += getEven(c);
-		unpaired += getOdd(c);
 		int binOnes = countBinaryOnes(num);
-		binOnes += countBinaryOnes(phone);
-		binOnes += countBinaryOnes(a);
-		binOnes += countBinaryOnes(b);
-		binOnes += countBinaryOnes(c);
-		binOnes += countBinaryOnes(d);
-		System.out.println("Paired: " + paired);
-		System.out.println("Unpaired: " + unpaired);
-		System.out.println("BinOnes: " + binOnes);
+		System.out.format("%12d%8d%9d%11d\n", num,paired,unpaired,binOnes);
+		paired = getEven(phone);
+		unpaired = getOdd(phone);
+		binOnes = countBinaryOnes(phone);
+		System.out.format("%12d%8d%9d%11d\n", phone,paired,unpaired,binOnes);
+		paired = getEven(a);
+		unpaired = getOdd(a);
+		binOnes = countBinaryOnes(a);
+		System.out.format("%12d%8d%9d%11d\n", a,paired,unpaired,binOnes);
+		paired = getEven(b);
+		unpaired = getOdd(b);
+		binOnes = countBinaryOnes(b);
+		System.out.format("%12d%8d%9d%11d\n", b,paired,unpaired,binOnes);
+		paired = getEven(c);
+		unpaired = getOdd(c);
+		binOnes = countBinaryOnes(c);
+		System.out.format("%12d%8d%9d%11d\n", c,paired,unpaired,binOnes);
+		binOnes = countBinaryOnes(d);
 	}
 	/**
 	 * Метод getEven, який рахує кількість парних цифр.
