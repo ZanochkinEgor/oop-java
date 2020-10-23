@@ -21,7 +21,7 @@ public class Main
         /*System.out.println("Input a string: ");
         String str = in.nextLine();
         System.out.println("Your string: " + str);*/
-		String str = "Welcome, to our - to welcome club, buddy. 12345 Welcome to our to welcome club, buddy.";
+		String str = "Welcome, @to our - #to@ !welcome@ ( hi ) club, buddy. 12345 @Welcome to our to welcome club, buddy.";
         System.out.println("Count letters in word to delete: ");
         int num = in.nextInt();
 		DeleteWords.findAndDelete(str,num);

@@ -22,37 +22,40 @@ public class DeleteWords
 			endPos = findPunctMark(sbStr,i);
 			if(!Character.isDigit(sbStr.charAt(i)))
 			{
-				if (isVowel(sbStr.charAt(i)) == false) 
+				if(Character.isAlphabetic(sbStr.charAt(i)))
 				{
-					StringBuilder sb = new StringBuilder(sbStr.substring(i, endPos));
-					int endPos2 = findPunctMark(sb,0);
-					if(endPos2 != -1)
-						sb.delete(endPos2,sb.length());
-					if(i != 0)
-						if(sb.length() == count)
-						{
-							if(endPos2 != -1)
-								sbStr.delete(i-1, endPos-1);
-							else
-								sbStr.delete(i-1, endPos);
-							i = i - 1;
-						}
-						else	
-							i = endPos;
+					if (isVowel(sbStr.charAt(i)) == false) 
+					{
+						StringBuilder sb = new StringBuilder(sbStr.substring(i, endPos));
+						int endPos2 = findPunctMark(sb,0);
+						if(endPos2 != -1)
+							sb.delete(endPos2,sb.length());
+						if(i != 0)
+							if(sb.length() == count)
+							{
+								if(endPos2 != -1)
+									sbStr.delete(i, endPos-1);
+								else
+									sbStr.delete(i, endPos+1);
+								i = i - 1;
+							}
+							else	
+								i = endPos;
+						else
+							if(sb.length() == count)
+							{
+								if(endPos2 != -1)
+									sbStr.delete(i, endPos-1);
+								else
+									sbStr.delete(i, endPos+1);
+								i = i - 1;
+							}
+							else	
+								i = endPos;
+					} 
 					else
-						if(sb.length() == count)
-						{
-							if(endPos2 != -1)
-								sbStr.delete(i, endPos-1);
-							else
-								sbStr.delete(i, endPos+1);
-							i = i - 1;
-						}
-						else	
-							i = endPos;
-				} 
-				else
-					i = endPos;
+						i = endPos;
+				}	
 			}
 			else
 				i = endPos;
@@ -103,6 +106,18 @@ public class DeleteWords
 			endPos = a.indexOf("/", num);
 		if(endPos == -1)
 			endPos = a.indexOf("|", num);
+		if(endPos == -1)
+			endPos = a.indexOf(")", num);
+		if(endPos == -1)
+			endPos = a.indexOf("(", num);
+		if(endPos == -1)
+			endPos = a.indexOf("@", num);
+		if(endPos == -1)
+			endPos = a.indexOf("#", num);
+		if(endPos == -1)
+			endPos = a.indexOf("$", num);
+		if(endPos == -1)
+			endPos = a.indexOf("%", num);
 		return endPos;
 	}
 }
