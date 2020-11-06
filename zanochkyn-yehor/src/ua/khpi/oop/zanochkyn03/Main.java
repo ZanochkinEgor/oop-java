@@ -21,7 +21,7 @@ public class Main
         /*System.out.println("Input a string: ");
         String str = in.nextLine();
         System.out.println("Your string: " + str);*/
-		String str = "Welcome, @to our - #to@ !welcome@ ( hi ) club, buddy. 12345 @Welcome to our to welcome club, buddy.";
+		String str = "There are five types of schools in the US educational system. They are: kindergarten, elementary school, middle school, high school and private school. Children go to kindergarten when they are 5 years old. They go to elementary school from ages 6 through 11 (1-5 grades), middle school from ages 12 through 14 (6-8 grades) and high school from ages 15 through 19 (9-12 grades).";
         System.out.println("Count letters in word to delete: ");
         int num = in.nextInt();
 		DeleteWords.findAndDelete(str,num);

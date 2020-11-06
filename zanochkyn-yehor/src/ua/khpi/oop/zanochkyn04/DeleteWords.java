@@ -1,8 +1,8 @@
-package ua.khpi.oop.zanochkyn03;
+package ua.khpi.oop.zanochkyn04;
 
 /**
  * Клас DeleteWords, який видаляє всі слова заданої довжини, 
- * що починаються на приголосну літеру. 
+ * що починаються на приголосну літеру.
  * 
  * @author Zanochkyn Yehor
  * @version 1.0 22/10/20
@@ -10,13 +10,15 @@ package ua.khpi.oop.zanochkyn03;
 public class DeleteWords 
 {
 	/**
-	 * Метод findAndDelete, який знаходить та видаляє потрібні слова
+	 * Метод findAndDelete, який знаходить та видаляє потрібні слова.
 	 */
-	public static void findAndDelete(String str, int count)
+	public static void findAndDelete(String str, int count, boolean debug)
 	{
 		StringBuilder sbStr = new StringBuilder(str.substring(0));
-		System.out.println("Default string: " + sbStr);
+		System.out.println("\nDefault string: " + sbStr);
 		int endPos = 0;
+		if(debug)
+			System.out.println("\nCurrent text: " + sbStr + "\n");
 		for (int i = 0; i < sbStr.length(); i++)
 		{
 			endPos = findPunctMark(sbStr,i);
@@ -37,6 +39,8 @@ public class DeleteWords
 							endPos--;
 							endPos2 = findPunctMark(sb,0);
 						}
+						if(debug)
+							System.out.println("Current word: " + sb);
 						if(endPos == sbStr.length()-1)
 							if(sb.length() == count)
 							{
@@ -63,11 +67,13 @@ public class DeleteWords
 			}
 			else
 				i = endPos;
+			if(debug)
+				System.out.println("Current text: " + sbStr);
 		}
-		System.out.println("Edited string: " + sbStr);
+		System.out.println("\nEdited string: " + sbStr);
 	}
 	/**
-	 * Метод isVowel, який перевіряє першу літеру слова
+	 * Метод isVowel, який перевіряє першу літеру слова.
 	 */
 	public static boolean isVowel(char c) 
 	{
@@ -85,7 +91,7 @@ public class DeleteWords
         }
     }
 	/**
-	 * Метод findPunctMark, який знаходить позицію, на якій є пунктуаційний знак
+	 * Метод findPunctMark, який знаходить позицію, на якій є пунктуаційний знак.
 	 */
 	public static int findPunctMark(StringBuilder a, int num)
 	{
