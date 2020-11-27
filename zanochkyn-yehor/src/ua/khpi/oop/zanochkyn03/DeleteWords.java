@@ -14,7 +14,7 @@ public class DeleteWords
 	 */
 	public static void findAndDelete(String str, int count)
 	{
-		StringBuilder sbStr = new StringBuilder(str.substring(0));
+		StringBuilder sbStr = new StringBuilder(str);
 		System.out.println("Default string: " + sbStr);
 		int endPos = 0;
 		for (int i = 0; i < sbStr.length(); i++)
