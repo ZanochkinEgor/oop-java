@@ -12,7 +12,7 @@ public class Client
 	private PartnerRequirements requirements;
 	
 	/*
-	 * Конструктор класу
+	 * Конструктори класу
 	 */
 	public Client(String gender, int id, String date, InfoAboutYourself info, PartnerRequirements requirements)
 	{
@@ -23,6 +23,10 @@ public class Client
 		this.requirements = requirements;
 	}
 	
+	public Client()
+	{
+		
+	}
 	/*
 	 * Геттери та сеттери
 	 */

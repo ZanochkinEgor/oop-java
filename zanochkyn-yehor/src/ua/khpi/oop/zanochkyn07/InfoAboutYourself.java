@@ -12,7 +12,7 @@ public class InfoAboutYourself
 	private String hobby;
 	
 	/*
-	 * Конструктор класу
+	 * Конструктори класу
 	 */
 	public InfoAboutYourself(String name, int age, int height, String eyeColour, String hobby)
 	{
@@ -21,6 +21,11 @@ public class InfoAboutYourself
 		this.height = height;
 		this.eyeColour = eyeColour;
 		this.hobby = hobby;
+	}
+	
+	public InfoAboutYourself()
+	{
+		
 	}
 	
 	/*

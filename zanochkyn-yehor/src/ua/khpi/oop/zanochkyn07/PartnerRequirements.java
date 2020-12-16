@@ -10,13 +10,18 @@ public class PartnerRequirements
 	private int maxAge;
 	
 	/*
-	 * Конструктор класу
+	 * Конструктори класу
 	 */
 	public PartnerRequirements(String gender, int minAge, int maxAge)
 	{
 		this.gender = gender;
 		this.minAge = minAge;
 		this.maxAge = maxAge;
+	}
+	
+	public PartnerRequirements()
+	{
+		
 	}
 	
 	/*

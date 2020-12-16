@@ -2,6 +2,9 @@ package ua.khpi.oop.zanochkyn07;
 
 public class ClientList 
 {
+	/*
+	 * Масив типу Client
+	 */
 	Client array[] = new Client[2];
 	
 	/*
