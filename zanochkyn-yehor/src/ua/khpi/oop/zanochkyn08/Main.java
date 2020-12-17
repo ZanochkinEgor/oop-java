@@ -123,6 +123,7 @@ public class Main
 						System.out.println("3. Height");
 						System.out.println("4. Eye colour");
 						System.out.println("5. Hobby");
+						System.out.println("6. Change all information");
 						System.out.println("Enter option:");
 						int option3 = inInt.nextInt();
 						System.out.println();
@@ -148,6 +149,11 @@ public class Main
 							System.out.println("Enter new hobby:");
 							list.array[index].getInformation().setClientHobby(inStr.nextLine());
 							break;
+						case 6:
+							System.out.println("Enter information about yourself: Name, age, height, eye colour, hobby.");
+							info = new InfoAboutYourself(inStr.nextLine(), inInt.nextInt(), inInt.nextInt(), inStr.nextLine(), inStr.nextLine());
+							list.array[index].setInformation(info);
+							break;
 						}
 						break;
 					case 5:
@@ -155,6 +161,7 @@ public class Main
 						System.out.println("1. Gender");
 						System.out.println("2. Min age");
 						System.out.println("3. Max age");
+						System.out.println("4. Change all requirements");
 						System.out.println("Enter option:");
 						option3 = inInt.nextInt();
 						System.out.println();
@@ -171,6 +178,11 @@ public class Main
 						case 3:
 							System.out.println("Enter new max age:");
 							list.array[index].getRequirements().setMaxAge(inInt.nextInt());
+							break;
+						case 4:
+							System.out.println("Enter partner requirements: Gender, min age, max age.");
+							requirements = new PartnerRequirements(inStr.nextLine(), inInt.nextInt(), inInt.nextInt());
+							list.array[index].setRequirements(requirements);
 							break;
 						}
 						break;
