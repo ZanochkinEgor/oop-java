@@ -1,4 +1,4 @@
-package ua.khpi.oop.zanochkyn07;
+package ua.khpi.oop.zanochkyn10;
 
 import java.io.Serializable;
 
@@ -13,12 +13,12 @@ public class InfoAboutYourself implements Serializable
 	private int age;
 	private int height;
 	private String eyeColour;
-	private String hobby;
+	private String[] hobby;
 	
 	/*
 	 * Конструктори класу
 	 */
-	public InfoAboutYourself(String name, int age, int height, String eyeColour, String hobby)
+	public InfoAboutYourself(String name, int age, int height, String eyeColour, String[] hobby)
 	{
 		this.name = name;
 		this.age = age;
@@ -75,12 +75,12 @@ public class InfoAboutYourself implements Serializable
 		this.eyeColour = eyeColour;
 	}
 	
-	public String getClientHobby()
+	public String[] getClientHobby()
 	{
 		return hobby;
 	}
 	
-	public void setClientHobby(String hobby)
+	public void setClientHobby(String[] hobby)
 	{
 		this.hobby = hobby;
 	}

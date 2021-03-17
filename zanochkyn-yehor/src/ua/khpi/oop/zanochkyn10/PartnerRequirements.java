@@ -1,4 +1,4 @@
-package ua.khpi.oop.zanochkyn07;
+package ua.khpi.oop.zanochkyn10;
 
 import java.io.Serializable;
 
@@ -12,15 +12,17 @@ public class PartnerRequirements implements Serializable
 	private String gender;
 	private int minAge;
 	private int maxAge;
+	private String[] hobby;
 	
 	/*
 	 * Конструктори класу
 	 */
-	public PartnerRequirements(String gender, int minAge, int maxAge)
+	public PartnerRequirements(String gender, int minAge, int maxAge, String[] hobby)
 	{
 		this.gender = gender;
 		this.minAge = minAge;
 		this.maxAge = maxAge;
+		this.hobby = hobby;
 	}
 	
 	public PartnerRequirements()
@@ -59,5 +61,15 @@ public class PartnerRequirements implements Serializable
 	public void setMaxAge(int maxAge)
 	{
 		this.maxAge = maxAge;
+	}
+	
+	public String[] getPartnerHobby()
+	{
+		return hobby;
+	}
+	
+	public void setPartnerHobby(String[] hobby)
+	{
+		this.hobby = hobby;
 	}
 }

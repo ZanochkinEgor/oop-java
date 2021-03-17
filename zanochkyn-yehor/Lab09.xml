@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.8" class="java.beans.XMLDecoder">
+ <object class="ua.khpi.oop.zanochkyn09.ClientList" id="ClientList0">
+  <void class="ua.khpi.oop.zanochkyn09.ClientList" method="getField">
+   <string>head</string>
+   <void method="set">
+    <object idref="ClientList0"/>
+    <object class="ua.khpi.oop.zanochkyn09.Node" id="Node0">
+     <void class="ua.khpi.oop.zanochkyn09.Node" method="getField">
+      <string>element</string>
+      <void method="set">
+       <object idref="Node0"/>
+       <object class="ua.khpi.oop.zanochkyn09.Client">
+        <void property="clientGender">
+         <string>Male</string>
+        </void>
+        <void property="date">
+         <string>27.02.2021</string>
+        </void>
+        <void property="id">
+         <int>1</int>
+        </void>
+        <void property="information">
+         <object class="ua.khpi.oop.zanochkyn07.InfoAboutYourself">
+          <void property="age">
+           <int>20</int>
+          </void>
+          <void property="clientHobby">
+           <string>Tennis</string>
+          </void>
+          <void property="eyeColour">
+           <string>Brown</string>
+          </void>
+          <void property="height">
+           <int>190</int>
+          </void>
+          <void property="name">
+           <string>Andrew</string>
+          </void>
+         </object>
+        </void>
+        <void property="requirements">
+         <object class="ua.khpi.oop.zanochkyn07.PartnerRequirements">
+          <void property="maxAge">
+           <int>23</int>
+          </void>
+          <void property="minAge">
+           <int>18</int>
+          </void>
+          <void property="partnerGender">
+           <string>Female</string>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="size">
+   <int>1</int>
+  </void>
+ </object>
+</java>

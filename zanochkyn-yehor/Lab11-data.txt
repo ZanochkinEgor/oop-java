@@ -1,0 +1,2 @@
+Male, Yehor, 19, 185, Blue, 2, Video games, Music, Female, 18, 25, 0, null
+Female, Katya, 18, 175, Green, 1, Art, Male, 18, 25, 1, Music

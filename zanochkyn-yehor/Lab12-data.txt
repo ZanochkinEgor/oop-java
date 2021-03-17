@@ -1,0 +1,5 @@
+Male, Georg, 30, 180, Grey, 1, Morning runs, Female, 25, 30, 1, Morning runs
+Male, Yehor, 19, 185, Blue, 2, Video games, Music, Female, 18, 25, 0, null
+Female, Katya, 18, 175, Green, 1, Art, Male, 18, 25, 1, Music
+Male, Anton, 25, 190, Brown, 2, Morning runs, Cooking, Female, 20, 28, 1, Morning runs
+Female, Liza, 22, 170, Grey, 1, Morning runs, Male, 20, 25, 1, Morning runs
