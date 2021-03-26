@@ -6,6 +6,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JAXB"/>
 	<classpathentry kind="lib" path="ua.khpi.oop.adbullin03.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

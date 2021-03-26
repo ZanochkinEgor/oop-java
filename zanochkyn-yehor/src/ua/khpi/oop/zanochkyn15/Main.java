@@ -908,7 +908,6 @@ public class Main
 	
 	public static void printAll(ArrayList<Client> arr)
 	{
-		System.out.println();
 		for(Client a : arr)
 			a.print();
 		System.out.println();
